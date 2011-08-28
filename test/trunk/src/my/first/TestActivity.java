@@ -21,6 +21,7 @@ public class TestActivity extends Activity {
     /** Called when the activity is first created. */
     final static protected int MENU_ABOUT = Menu.FIRST;
     final static protected int MENU_QUIT = Menu.FIRST + 1;
+    
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
