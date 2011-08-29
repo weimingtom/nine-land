@@ -1,5 +1,6 @@
 package my.first;
 
+import my.first.view.GameView;
 import my.first.view.MyView;
 import android.app.Activity;
 import android.content.Intent;
@@ -29,7 +30,8 @@ public class TestActivity extends Activity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         MyView myView = new MyView(this);
-        setContentView(myView);
+        GameView gv = new GameView(this);
+        setContentView(gv);
 
 //        Button btn = (Button) findViewById(R.id.btn1);
 //        btn.setOnClickListener(this.onClick);
